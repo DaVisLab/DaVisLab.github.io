@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style/output.css" rel="stylesheet">
+  <script src="scripts/generatePeople.js" type="text/javascript"></script>
+  <script src="scripts/d3.v7.min.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -30,228 +32,18 @@
   </div>
 
   <div class="max-w-7xl mx-auto p-10 sm:px-6 lg:px-8">
-    <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Team at Clemson</h2>
-    <div class="grid grid-cols-3 gap-4">
-      <!--new card -->
-      <div class="relative rounded-sm border border-gray-200 bg-white shadow-lg">
-
-        <img src="img/people/iuricich.jpeg" class="w-28 rounded-full absolute top-0 m-4 z-30 absolute grayscale hover:grayscale-0" alt="">
-        <div class="text-right p-4">
-          <span class="text-xs text-gray-500 tracking-widest uppercase">Assistant Professor</span>  
-        </div>
-    
-        <div class="flex items-center relative">
-          <div class="border-t border-gray-200 z-20 w-full"></div>
-        </div>
-        <div class="px-2 pb-4 pt-14">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Federico Iuricich</h2>
-
-          </p>
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold">Research Interests </span>
-            - Visualization, Topological Data Analysis, Geometry processing, Spatial data structures, Unstructured data. 
-          </p>
-          <p class="text-gray-600 text-xs pl-2 mx-3 mb-10">
-            <span class="font-bold">Hobbies </span>
-            - Rock Climbing, Mountain biking, Hiking, Cooking.
-          </p>
-        </div>
-        
-        <div class="absolute bottom-0 right-0">
-          <a href="http://fiurici.people.clemson.edu"><img src="img/web.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="https://github.com/IuricichF"><img src="img/github.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="mailto:fiurici@g.clemson.edu"><img src="img/email-svgrepo-com.svg" class="w-8 pb-3 mr-6 tracking-widest inline "alt=""></a>
-        </div>
-      </div>
-
-      <div class="relative rounded-sm border border-gray-200 bg-white shadow-lg">
-        <img src="img/people/guoxil.jpg" class="w-28 rounded-full absolute top-0 m-4 z-30 absolute grayscale hover:grayscale-0" alt="">
-        <div class="text-right p-4">
-          <span class="text-xs text-gray-500 tracking-widest uppercase">Ph.D. Student</span>  
-        </div>
-    
-        <div class="flex items-center relative">
-          <div class="border-t border-gray-200 z-20 w-full"></div>
-        </div>
-        <div class="px-2 pb-4 pt-14">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Guoxi Liu</h2>
-
-          </p>
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold">Research Interests </span>
-            - Scientific Visualization, Topological Data Analysis, Spatial Data Structures
-          </p>
-          <p class="text-gray-600 text-xs pl-2 mx-3 mb-10">
-            <span class="font-bold">Hobbies </span>
-            - Traveling, Hiking, Reading
-          </p>
-        </div>
-        
-        <div class="absolute bottom-0 right-0">
-          <a href="https://guoxil.people.clemson.edu/"><img src="img/web.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="https://github.com/guoxiliu"><img src="img/github.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="mailto:guoxil@clemson.edu"><img src="img/email-svgrepo-com.svg" class="w-8 pb-3 mr-6 tracking-widest inline "alt=""></a>
-        </div>
-      </div>
-
-
-      <div class="relative rounded-sm border border-gray-200 bg-white shadow-lg">
-        <img src="img/people/xueyi.jpg.png" class="w-28 rounded-full absolute top-0 m-4 z-30 absolute grayscale hover:grayscale-0" alt="">
-        <div class="text-right p-4">
-          <span class="text-xs text-gray-500 tracking-widest uppercase">Ph.D. Student</span>  
-        </div>
-    
-        <div class="flex items-center relative">
-          <div class="border-t border-gray-200 z-20 w-full"></div>
-        </div>
-        <div class="px-2 pb-4 pt-14">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Xueyi Bao</h2>
-
-          </p>
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold">Research Interests </span>
-            - Scientific Visualization, Rendering, Computational Geometry
-          </p>
-          <p class="text-gray-600 text-xs pl-2 mx-3 mb-10">
-            <span class="font-bold">Hobbies </span>
-            - Jogging, Badminton, Movies
-          </p>
-        </div>
-        
-        <div class="absolute bottom-0 right-0">
-          <!-- <a href=""><img src="img/web.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a> -->
-          <a href="https://github.com/4321baoxueyi"><img src="img/github.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="mailto:xueyib@clemson.edu"><img src="img/email-svgrepo-com.svg" class="w-8 pb-3 mr-6 tracking-widest inline "alt=""></a>
-        </div>
-      </div>
-
-
-      <div class="relative rounded-sm border border-gray-200 bg-white shadow-lg">
-        <img src="img/people/fardifa.jpg" class="w-28 rounded-full absolute top-0 m-4 z-30 absolute grayscale hover:grayscale-0" alt="">
-        <div class="text-right p-4">
-          <span class="text-xs text-gray-500 tracking-widest uppercase">Ph.D. Student</span>  
-        </div>
-    
-        <div class="flex items-center relative">
-          <div class="border-t border-gray-200 z-20 w-full"></div>
-        </div>
-        <div class="px-2 pb-4 pt-14">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Fardifa Fathmiul Alam </h2>
-
-          </p>
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold">Research Interests </span>
-            - Data Visualisation, Spatial Data Structures in Autonomous Navigation, Image Processing
-          </p>
-          <p class="text-gray-600 text-xs pl-2 mx-3 mb-10">
-            <span class="font-bold">Hobbies </span>
-            - Photography, Travelling, Cooking
-          </p>
-        </div>
-        
-        <div class="absolute bottom-0 right-0">
-          <!-- <a href=""><img src="img/web.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a> -->
-          <a href="www.github.com/fardifa"><img src="img/github.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="mailto:fardifa@g.clemson.edu"><img src="img/email-svgrepo-com.svg" class="w-8 pb-3 mr-6 tracking-widest inline "alt=""></a>
-        </div>
-      </div>
-
-
-
-      <div class="relative rounded-sm border border-gray-200 bg-white shadow-lg">
-        <img src="img/people/Ranga.jpeg" class="w-28 rounded-full absolute top-0 m-4 z-30 absolute grayscale hover:grayscale-0" alt="">
-        <div class="text-right p-4">
-          <span class="text-xs text-gray-500 tracking-widest uppercase">Ph.D. Student</span>  
-        </div>
-    
-        <div class="flex items-center relative">
-          <div class="border-t border-gray-200 z-20 w-full"></div>
-        </div>
-        <div class="px-2 pb-4 pt-14">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Ranga Baminiwatte</h2>
-
-          </p>
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold">Research Interests </span>
-            - Machine Learning, Data Visualization, Data Mining, AI in Healthcare
-          </p>
-          <p class="text-gray-600 text-xs pl-2 mx-3 mb-10">
-            <span class="font-bold">Hobbies </span>
-            - Cooking, Movies & TV, Cricket
-          </p>
-        </div>
-        
-        <div class="absolute bottom-0 right-0">
-          <!-- <a href=""><img src="img/web.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a> -->
-          <a href="https://github.com/ranga519"><img src="img/github.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="mailto:abamini@clemson.edu"><img src="img/email-svgrepo-com.svg" class="w-8 pb-3 mr-6 tracking-widest inline "alt=""></a>
-        </div>
-      </div>
-
-      
-      <div class="relative rounded-sm border border-gray-200 bg-white shadow-lg">
-        <img src="img/people/Grace.JPG" class="w-28 rounded-full absolute top-0 m-4 z-30 absolute grayscale hover:grayscale-0" alt="">
-        <div class="text-right p-4">
-          <span class="text-xs text-gray-500 tracking-widest uppercase">Master Student</span>  
-        </div>
-    
-        <div class="flex items-center relative">
-          <div class="border-t border-gray-200 z-20 w-full"></div>
-        </div>
-        <div class="px-2 pb-4 pt-14">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Grace Austen</h2>
-
-          </p>
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold">Research Interests </span>
-            - Data Analysis, Visualization, Machine Learning
-          </p>
-          <p class="text-gray-600 text-xs pl-2 mx-3 mb-10">
-            <span class="font-bold">Hobbies </span>
-            - Reading, Hiking
-          </p>
-        </div>
-        
-        <div class="absolute bottom-0 right-0">
-          <!-- <a href=""><img src="img/web.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a> -->
-          <a href="https://github.com/Grace-Austen"><img src="img/github.svg" class="w-8 pb-3 tracking-widest inline "alt=""></a>
-          <a href="mailto:gausten@clemson.edu"><img src="img/email-svgrepo-com.svg" class="w-8 pb-3 mr-6 tracking-widest inline "alt=""></a>
-        </div>
-      </div>
-
-
-  
+    <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">@ Clemson</h2>
+    <div class="grid grid-cols-3 gap-4" id="people-content">
       
 
     </div>
   </div>
 
 
-  <!-- ALUMNI -->
+  <!-- CO-ADVISE -->
   <div class="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8">
     <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Students co-advised at other institutions</h2>
     <div class="grid grid-cols-6 gap-4">
-      
-      <div class="relative rounded-sm bg-white ">
-        <div class="flex items-center relative">
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <img src="img/people/xin.png" class="w-28 rounded-full absolute z-30 shadow-lg grayscale hover:grayscale-0" alt="">
-          </p>
-        </div>
-        <div class="px-2 py-24 pb-4">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold"> <a href="https://geog.umd.edu/gradprofile/xu/xin" style="text-decoration: none">Xin Xu</a> </span><br>
-            <span>PhD student @ UMD<br></span>
-            <span>Co-advised with Prof. Leila De Floriani</span>
-          </p>
-        </div>
-      </div>
 
       <div class="relative rounded-sm bg-white ">
         <div class="flex items-center relative">
@@ -273,77 +65,20 @@
 
 
 
-
   <!-- ALUMNI -->
   <div class="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8">
     <h2 class="text-gray-800 text-xl font-bold pt-5 m-3 pl-2">Alumni</h2>
-    <div class="grid grid-cols-6 gap-4">
-      
-      <div class="relative rounded-sm bg-white ">
-        <div class="flex items-center relative">
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <img src="img/people/george.jpg" class="w-28 rounded-full absolute z-30 shadow-lg grayscale hover:grayscale-0" alt="">
-          </p>
-        </div>
-        <div class="px-2 py-24 pb-4">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold"> <a href="https://github.com/xiaolong-tian-19" style="text-decoration: none">Xiaolong Tian</a> </span><br>
-            <span>PhD student -</span>
-            <span>CS @ University of Maryland</span>
-          </p>
-        </div>
-      </div>
+    <div id="alumni-content" class="grid grid-cols-6 gap-4">
 
-      <div class="relative rounded-sm bg-white ">
-        <div class="flex items-center relative">
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <img src="img/people/yujia.png" class="w-28 rounded-full absolute z-30 shadow-lg grayscale hover:grayscale-0" alt="">
-          </p>
-        </div>
-        <div class="px-2 py-24 pb-4">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold"> <a href="mailto:yujias@g.clemson.edu" style="text-decoration: none">Yujia Sun</a> </span><br>
-            <span>PhD student -</span>
-            <span>BDSI @ Clemson University</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="relative rounded-sm bg-white ">
-        <div class="flex items-center relative">
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <img src="img/people/weimin.png" class="w-28 rounded-full absolute z-30 shadow-lg grayscale hover:grayscale-0" alt="">
-          </p>
-        </div>
-        <div class="px-2 py-24 pb-4">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold"> <a href="https://github.com/Lygihub" style="text-decoration: none">Weimin Li</a> </span><br>
-            <span>Software engineer</span>
-            <span>Capgemini</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="relative rounded-sm bg-white ">
-        <div class="flex items-center relative">
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <img src="img/people/xzhang7.jpg" class="w-28 rounded-full absolute z-30 shadow-lg grayscale hover:grayscale-0" alt="">
-          </p>
-        </div>
-        <div class="px-2 py-24 pb-4">                    
-          <p class="text-gray-600 text-xs pl-2 m-3">
-            <span class="font-bold"> <a href="https://github.com/ghs2015" style="text-decoration: none">Xiang Zhang</a> </span><br>
-            <span>Research scientist</span>
-            <span>TuSimple</span>
-          </p>
-        </div>
-      </div>
 
 
     </div>
   </div>
 
-   
+  <script>
+    generatePeople()
+    generateAlumni()
+  </script>
   
 
 </body>
