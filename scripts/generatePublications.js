@@ -101,10 +101,10 @@ function generatePublications(){
                 .html("&#183;") 
 
         iconblock.append("a")
-            .attr("href", d => d.Github)
+            .attr("href", d => d.Slides)
             .attr("class", "text-base no-underline mr-1")
             .attr("style", d => {
-                if(d.Github == "") return "pointer-events:none; opacity:0.1"
+                if(d.Slides == "") return "pointer-events:none; opacity:0.1"
                 else "pointer-events:auto; opacity:1"
             })
             .append("img")
