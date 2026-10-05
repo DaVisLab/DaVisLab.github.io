@@ -1,4 +1,5 @@
 ﻿Date,Tag,Content,,,
+"2026, September 18",Paper,Congratulations to Mina Gachloo for winning first place in the Innovation category at Clemson HPC Day for her work, Beyond Distance: Movement Direction for Low-Frame-Rate Cell Linking.",,,
 "2026, August 18",People,"Welcome to <a href=""https://davislab.github.io/team.html"">Kira, Milka, and Veer</a>. They have joined the group as new members.",,,
 "2026, July 1",Paper,"Congratulations to Mithilesh for his <a href=""https://clemson.box.com/s/8bp78n7fh14iztp4map67kwty7ks5nua"">short paper</a> accepted to <span class=""text-amber-600"">IEEE VIS 2026 </span>. This work addresses performance bottlenecks in topological analysis of unstructured meshes caused by inefficient spatial subdivision in block-based, task-parallel data structures. We tackle this problem with a systematic comparison of spatial and topology-aware subdivision strategies, demonstrating their impact on memory organization and runtime performance.",,,
 "2025, November 20",People,"Welcome to <a href=""https://davislab.github.io/team.html"">Mithilesh</a>. He joined the group as a new <span class=""text-amber-600"">Master Student</span>.",,,
